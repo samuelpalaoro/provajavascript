@@ -1,0 +1,50 @@
+---- Exercico 1-----
+
+let inputValue= 7;
+let isprime=inputValue==1? false:true;
+
+for(let i=2;i<inputValue;i++){
+  inputValue%i==0? isprime*=false :isprime*=true;
+};
+
+alert(`${inputValue} is ${isprime? 'primo':'não é primo'} numero`)
+
+---- Exercico 2-----
+function CheckPassword(inputtxt) 
+{ 
+var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+if(inputtxt.value.match(decimal)) 
+{ 
+alert('Correto, tente outra vez...')
+return true;
+}
+else
+{ 
+alert('Errado...!')
+return false;
+}
+} 
+
+---- Exercico 3-----
+
+function fatore(num) {
+  if (num < 0) 
+        return -1;
+  else if (num == 0) 
+      return 1;
+  else {
+      return (num * fatore(num - 1));
+  }
+}
+fatore(5);
+
+---- Exercico 4-----
+
+var quadradoPerfeito= prompt("Insira um número:")
+z= Math.sqrt(quadradoPerfeito);
+if(quadradoPerfeito == z*z){
+     alert("Este número é um quadrado perfeito")
+}
+else{
+   alert("Este numero não é um quadrado perfeito")
+}
